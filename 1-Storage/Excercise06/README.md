@@ -1,4 +1,4 @@
-### **Azure Storage - Exercise 6: Create an Azure Database for PostgreSQL Database**
+# **Azure Storage - Exercise 6: Create an Azure Database for PostgreSQL Database**
 
 ## **Objective**
 

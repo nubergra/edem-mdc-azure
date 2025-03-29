@@ -1,4 +1,4 @@
-### **Azure Storage - Exercise 7: Automating the Creation of an Azure Database for PostgreSQL Database**
+# **Azure Storage - Exercise 7: Automating the Creation of an Azure Database for PostgreSQL Database**
 
 ## **Objective**
 

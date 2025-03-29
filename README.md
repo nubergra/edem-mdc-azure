@@ -39,3 +39,4 @@ Below is the list of exercises included in this repository:
 - [Azure Storage - Excercise 9: Automating the creation of an Azure Cosmos DB for NoSQL account](./1-Storage/Excercise09)
 - [Azure Storage - Exercise 10: Automating the Creation of an Azure Cosmos DB for MongoDB account](./1-Storage/Excercise10)
 - [Azure Storage - Exercise 11 (Extra): Automating the Creation of an Azure Cosmos DB for PostgreSQL account](./1-Storage/Excercise11)
+- [Azure Processing - Excercise 1: ]
