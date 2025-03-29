@@ -1,4 +1,4 @@
-# Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure
+# **Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure**
 
 ## **Objective**  
 
@@ -21,4 +21,5 @@ In this exercise, we will **automate** the creation of an **Azure Blob Storage**
 ## **Resources**  
 
 - 📌 [Azure Portal](https://portal.azure.com)  
-- 📖 [Azure Blob Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/)  
+- 📖 [Azure Blob Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/)
+- 🛠 [Terraform Documentation](https://www.terraform.io/docs)

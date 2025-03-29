@@ -1,4 +1,4 @@
-# Azure Storage - Exercise 1: Create a Blob Storage Account in Azure  
+# **Azure Storage - Exercise 1: Create a Blob Storage Account in Azure**
 
 ## **Objective**  
 
