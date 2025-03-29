@@ -28,5 +28,5 @@ Each session includes guided exercises with instructions and useful references. 
 Below is the list of exercises included in this repository:
 
 - [Set Up - Exercise 1: Log in to the Azure Portal](./0-Setup/readme.md)
-- [Azure Storage - Exercise 1: Create a Blob Storage Account in Azure](./1-Storage/Excercise01/README.md)
-- [Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure  ](./1-Storage/Excercise02/README.md)
+- [Azure Storage - Exercise 1: Create a Blob Storage Account in Azure](./1-Storage/Excercise01)
+- [Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure  ](./1-Storage/Excercise02)
