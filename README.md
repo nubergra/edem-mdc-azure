@@ -48,3 +48,5 @@ Below is the list of exercises included in this repository:
 - [Azure Processing - Exercise 7: Create a Data Factory](./3-Processing/Exercise07/)
 - [Azure Processing - Exercise 8: Simple ETL in Data Factory](./3-Processing/Exercise08/)
 - [Azure Processing - Exercise 9: Data Processing in Data Factory](./3-Processing/Exercise09/)
+- [Azure End-to-end - Exercise 1: Azure Event Hubs & Azure Functions & Azure CosmosDB](./4-End-to-end/Exercise01)
+- [Azure End-to-end - Exercise 2 (Extra): Blob Storage & Data Factory & Azure SQL Database](./4-End-to-end/Exercise02)
