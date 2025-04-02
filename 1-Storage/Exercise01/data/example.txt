@@ -1,0 +1,2 @@
+This is a sample text file for the Azure Blob Storage exercise.
+Upload, download, and delete this file using Azure Storage.

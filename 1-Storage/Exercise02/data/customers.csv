@@ -1,0 +1,6 @@
+CustomerID,Name,Email,JoinDate,Location
+101,John Doe,john.doe@example.com,2022-05-14,New York
+102,Jane Smith,jane.smith@example.com,2023-01-22,Los Angeles
+103,Emily Johnson,emily.j@example.com,2021-11-30,Chicago
+104,Michael Brown,michael.b@example.com,2020-08-17,Houston
+105,Sarah Wilson,sarah.w@example.com,2023-03-10,San Francisco
