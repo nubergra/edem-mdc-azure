@@ -1,4 +1,4 @@
-# **Azure Storage - Exercise 11 (Extra): Automating the Creation of an Azure Cosmos DB for PostgreSQL account**
+# **Azure Storage - Extra Excercise 2: Automating the Creation of an Azure Cosmos DB for PostgreSQL account**
 
 ## **Objective**
 
