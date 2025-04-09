@@ -20,7 +20,7 @@ In this exercise, we will **automate** the creation of an **Azure Blob Storage**
 
 ## **Tips**
 
-To make sure you create a Blob Storage and not an ADLS storage account, **set the `is_hns_enabled` value to false** when creating the storage account.
+To make sure you create a Blob Storage and not an ADLS storage account, **set the `is_hns_enabled` value to false and the `account_kind` to BlobStorage** when creating the storage account.
 
 ## **Resources**  
 
