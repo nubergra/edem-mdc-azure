@@ -1,66 +1,66 @@
-# Ejercicio 0: Configuración de una Máquina Virtual en Azure
+# Exercise 0: Configuring a Virtual Machine in Azure
 
-En este ejercicio, aprenderás a configurar una máquina virtual (VM) en Azure utilizando el portal de Azure y la Azure CLI.
+In this exercise, you will learn how to set up a virtual machine (VM) in Azure using both the Azure portal and Azure CLI.
 
-## Objetivos
-1. Crear una máquina virtual usando el portal de Azure.
-2. Crear una máquina virtual usando la Azure CLI.
-
----
-
-## Parte 1: Crear una Máquina Virtual usando el Portal de Azure
-
-1. Inicia sesión en el [portal de Azure](https://portal.azure.com/).
-2. En el menú de la izquierda, selecciona **Máquinas virtuales** y haz clic en **+ Crear > Máquina virtual**.
-3. Completa los campos requeridos:
-    - **Grupo de recursos**: Crea uno nuevo o selecciona uno existente.
-    - **Nombre de la máquina virtual**: Escribe un nombre único.
-    - **Región**: Selecciona una región cercana a tu ubicación.
-    - **Imagen**: Selecciona una imagen del sistema operativo (por ejemplo, Ubuntu Server 20.04 LTS).
-    - **Tamaño**: Selecciona un tamaño adecuado para la VM.
-    - **Nombre de usuario y contraseña**: Configura las credenciales de acceso.
-4. Haz clic en **Revisar y crear** y luego en **Crear**.
+## Objectives
+1. Create a virtual machine using the Azure portal.
+2. Create a virtual machine using Azure CLI.
 
 ---
 
-## Parte 2: Crear una Máquina Virtual usando la Azure CLI
+## Part 1: Create a Virtual Machine using the Azure Portal
 
-1. Abre una terminal y asegúrate de haber iniciado sesión en Azure:
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+2. In the left menu, select **Virtual Machines** and click **+ Create > Virtual Machine**.
+3. Fill in the required fields:
+    - **Resource group**: Create a new one or select an existing one.
+    - **Virtual machine name**: Enter a unique name.
+    - **Region**: Select a region close to your location.
+    - **Image**: Select an operating system image (e.g., Ubuntu Server 20.04 LTS).
+    - **Size**: Select an appropriate size for the VM.
+    - **Username and password**: Configure access credentials.
+4. Click **Review + create** and then **Create**.
+
+---
+
+## Part 2: Create a Virtual Machine using Azure CLI
+
+1. Open a terminal and make sure you're logged into Azure:
     ```bash
     az login
     ```
-2. Crea un grupo de recursos:
+2. Create a resource group:
     ```bash
-    az group create --name MiGrupoDeRecursos --location eastus
+    az group create --name MyResourceGroup --location eastus
     ```
-3. Crea la máquina virtual:
+3. Create the virtual machine:
     ```bash
     az vm create \
-      --resource-group MiGrupoDeRecursos \
-      --name MiMaquinaVirtual \
+      --resource-group MyResourceGroup \
+      --name MyVirtualMachine \
       --image UbuntuLTS \
       --admin-username azureuser \
       --generate-ssh-keys
     ```
-4. Verifica que la máquina virtual se haya creado correctamente:
+4. Verify that the virtual machine has been created successfully:
     ```bash
-    az vm list --resource-group MiGrupoDeRecursos --output table
+    az vm list --resource-group MyResourceGroup --output table
     ```
 
 ---
 
-## Limpieza de Recursos
+## Resource Cleanup
 
-Para evitar costos innecesarios, elimina los recursos creados al finalizar el ejercicio:
+To avoid unnecessary costs, delete the resources created after completing the exercise:
 
-1. Usando la Azure CLI:
+1. Using Azure CLI:
     ```bash
-    az group delete --name MiGrupoDeRecursos --yes --no-wait
+    az group delete --name MyResourceGroup --yes --no-wait
     ```
 
-2. Usando el portal de Azure:
-    - Ve a **Grupos de recursos**, selecciona el grupo creado y haz clic en **Eliminar grupo de recursos**.
+2. Using the Azure portal:
+    - Go to **Resource groups**, select the created group and click **Delete resource group**.
 
 ---
 
-¡Felicidades! Has configurado una máquina virtual en Azure usando el portal y la Azure CLI.
+Congratulations! You have configured a virtual machine in Azure using both the portal and Azure CLI.

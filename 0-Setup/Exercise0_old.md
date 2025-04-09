@@ -1,129 +1,129 @@
-# Introducción a Azure Cloud
+# Introduction to Azure Cloud
 
-## Ejercicio de Introducción a Azure
+## Azure Introduction Exercise
 
-En este ejercicio, aprenderás a crear y configurar varios elementos en Azure, incluyendo grupos de recursos, redes virtuales, funciones de Azure, permisos RBAC y almacenamiento en blob de Data Factory, tanto desde el Portal de Azure como desde la consola de comandos usando Azure CLI. Además, utilizaremos estos recursos para cargar un archivo plano o JSON al Blob Storage, que será procesado por una Azure Function para crear nuevos archivos y almacenarlos en otros contenedores. Finalmente, estos archivos desencadenarán un proceso de transformación y carga en Data Factory.
+In this exercise, you will learn how to create and configure various elements in Azure, including resource groups, virtual networks, Azure functions, RBAC permissions, and Data Factory blob storage, both from the Azure Portal and command line using Azure CLI. Additionally, we will use these resources to upload a flat file or JSON to Blob Storage, which will be processed by an Azure Function to create new files and store them in other containers. Finally, these files will trigger a transformation and loading process in Data Factory.
 
-### Paso 1: Crear un Grupo de Recursos
+### Step 1: Create a Resource Group
 
-#### Desde el Portal de Azure (Portal)
+#### From Azure Portal
 
-1. Abre el [Portal de Azure](https://portal.azure.com/).
-2. Navega a "Grupos de recursos".
-3. Haz clic en "Agregar".
-4. Introduce un nombre para el grupo de recursos.
-5. Selecciona una región.
-6. Haz clic en "Revisar + crear" y luego en "Crear".
+1. Open the [Azure Portal](https://portal.azure.com/).
+2. Navigate to "Resource groups".
+3. Click "Add".
+4. Enter a name for the resource group.
+5. Select a region.
+6. Click "Review + create" and then "Create".
 
-#### Desde la consola de comandos (Azure CLI) - Grupo de Recursos
-
-```sh
-az group create --name NombreDelGrupoDeRecursos --location Region
-```
-
-### Paso 2: Crear una Red Virtual (VNet)
-
-#### Desde el Portal de Azure (Portal)
-
-1. En el Portal de Azure, navega a "Redes virtuales".
-2. Haz clic en "Agregar".
-3. Introduce un nombre para la red virtual.
-4. Selecciona el grupo de recursos creado en el paso anterior.
-5. Configura el espacio de direcciones y las subredes.
-6. Haz clic en "Revisar + crear" y luego en "Crear".
-
-#### Desde la consola de comandos (Azure CLI)
+#### From Command Line (Azure CLI) - Resource Group
 
 ```sh
-az network vnet create --resource-group NombreDelGrupoDeRecursos --name NombreDeLaVNet --address-prefix PrefijoDeDirección --subnet-name NombreDeLaSubred --subnet-prefix PrefijoDeDirecciónDeLaSubred
+az group create --name ResourceGroupName --location Region
 ```
 
-### Paso 3: Crear una Función de Azure
+### Step 2: Create a Virtual Network (VNet)
 
-#### Desde el Portal de Azure
+#### From Azure Portal
 
-1. Navega a "Funciones de Azure" en el Portal de Azure.
-2. Haz clic en "Agregar".
-3. Selecciona "Crear desde cero".
-4. Introduce un nombre para la función.
-5. Selecciona el grupo de recursos y la región.
-6. Configura el plan de hospedaje y el sistema operativo.
-7. Haz clic en "Revisar + crear" y luego en "Crear".
+1. In the Azure Portal, navigate to "Virtual networks".
+2. Click "Add".
+3. Enter a name for the virtual network.
+4. Select the resource group created in the previous step.
+5. Configure the address space and subnets.
+6. Click "Review + create" and then "Create".
 
-#### Desde la consola de comandos (Azure CLI)
+#### From Command Line (Azure CLI)
 
 ```sh
-az functionapp create --resource-group NombreDelGrupoDeRecursos --consumption-plan-location Region --runtime Runtime --functions-version Version --name NombreDeLaFunción --storage-account NombreDeLaCuentaDeAlmacenamiento
+az network vnet create --resource-group ResourceGroupName --name VNetName --address-prefix AddressPrefix --subnet-name SubnetName --subnet-prefix SubnetAddressPrefix
 ```
 
-### Paso 4: Asignar Permisos RBAC
+### Step 3: Create an Azure Function
 
-#### Desde el Portal de Azure
+#### From Azure Portal
 
-1. Navega al grupo de recursos creado.
-2. Haz clic en "Control de acceso (IAM)".
-3. Haz clic en "Agregar" y selecciona "Agregar asignación de roles".
-4. Selecciona el rol que deseas asignar (por ejemplo, "Colaborador").
-5. Selecciona el usuario o grupo al que deseas asignar el rol.
-6. Haz clic en "Guardar".
+1. Navigate to "Azure Functions" in the Azure Portal.
+2. Click "Add".
+3. Select "Create from scratch".
+4. Enter a name for the function.
+5. Select the resource group and region.
+6. Configure the hosting plan and operating system.
+7. Click "Review + create" and then "Create".
 
-#### Desde la consola de comandos (Azure CLI)
+#### From Command Line (Azure CLI)
 
 ```sh
-az role assignment create --assignee UsuarioOGrupo --role Rol --resource-group NombreDelGrupoDeRecursos
+az functionapp create --resource-group ResourceGroupName --consumption-plan-location Region --runtime Runtime --functions-version Version --name FunctionName --storage-account StorageAccountName
 ```
 
-### Paso 5: Configurar Almacenamiento en Blob de Data Factory
+### Step 4: Assign RBAC Permissions
 
-#### Desde el Portal de Azure
+#### From Azure Portal
 
-1. Navega a "Data Factory" en el Portal de Azure.
-2. Haz clic en "Agregar".
-3. Introduce un nombre para la instancia de Data Factory.
-4. Selecciona el grupo de recursos y la región.
-5. Haz clic en "Revisar + crear" y luego en "Crear".
-6. Una vez creada la instancia, navega a "Almacenamiento en Blob".
-7. Configura una cuenta de almacenamiento y un contenedor de blobs.
-8. Conecta Data Factory al almacenamiento en blob configurado.
+1. Navigate to the created resource group.
+2. Click "Access control (IAM)".
+3. Click "Add" and select "Add role assignment".
+4. Select the role you want to assign (e.g., "Contributor").
+5. Select the user or group you want to assign the role to.
+6. Click "Save".
 
-#### Desde la consola de comandos (Azure CLI)
+#### From Command Line (Azure CLI)
 
 ```sh
-az datafactory create --resource-group NombreDelGrupoDeRecursos --factory-name NombreDeLaDataFactory --location Region
-az storage account create --name NombreDeLaCuentaDeAlmacenamiento --resource-group NombreDelGrupoDeRecursos --location Region --sku Standard_LRS
-az storage container create --name NombreDelContenedor --account-name NombreDeLaCuentaDeAlmacenamiento
+az role assignment create --assignee UserOrGroup --role Role --resource-group ResourceGroupName
 ```
 
-### Paso 6: Cargar y Procesar Archivos con Azure Function
+### Step 5: Configure Data Factory Blob Storage
 
-#### Desde el Portal de Azure
+#### From Azure Portal
 
-1. Navega a "Funciones de Azure" y selecciona la función creada.
-2. Configura la función para que se active al cargar archivos en el Blob Storage.
-3. Implementa el código de la función para procesar el archivo y crear nuevos archivos.
-4. Configura la salida de la función para almacenar los nuevos archivos en otros contenedores.
+1. Navigate to "Data Factory" in the Azure Portal.
+2. Click "Add".
+3. Enter a name for the Data Factory instance.
+4. Select the resource group and region.
+5. Click "Review + create" and then "Create".
+6. Once created, navigate to "Blob Storage".
+7. Configure a storage account and blob container.
+8. Connect Data Factory to the configured blob storage.
 
-#### Desde la consola de comandos (Azure CLI)
+#### From Command Line (Azure CLI)
 
 ```sh
-# Implementación del código de la función
-# (Este paso puede variar dependiendo del lenguaje y la lógica de la función)
+az datafactory create --resource-group ResourceGroupName --factory-name DataFactoryName --location Region
+az storage account create --name StorageAccountName --resource-group ResourceGroupName --location Region --sku Standard_LRS
+az storage container create --name ContainerName --account-name StorageAccountName
 ```
 
-### Paso 7: Configurar Proceso de Transformación y Carga en Data Factory
+### Step 6: Upload and Process Files with Azure Function
 
-#### Desde el Portal de Azure
+#### From Azure Portal
 
-1. Navega a "Data Factory" y selecciona la instancia creada.
-2. Configura un pipeline para que se active al recibir nuevos archivos en los contenedores.
-3. Define las actividades de transformación y carga necesarias.
-4. Publica y ejecuta el pipeline.
+1. Navigate to "Azure Functions" and select the created function.
+2. Configure the function to trigger when files are uploaded to Blob Storage.
+3. Implement the function code to process the file and create new files.
+4. Configure the function output to store new files in other containers.
 
-#### Desde la consola de comandos (Azure CLI)
+#### From Command Line (Azure CLI)
 
 ```sh
-# Configuración del pipeline
-# (Este paso puede variar dependiendo de la lógica del pipeline)
+# Function code deployment
+# (This step may vary depending on the language and function logic)
 ```
 
-¡Felicidades! Has completado el ejercicio de introducción a Azure.
+### Step 7: Configure Transformation and Loading Process in Data Factory
+
+#### From Azure Portal
+
+1. Navigate to "Data Factory" and select the created instance.
+2. Configure a pipeline to trigger when new files arrive in the containers.
+3. Define the necessary transformation and loading activities.
+4. Publish and run the pipeline.
+
+#### From Command Line (Azure CLI)
+
+```sh
+# Pipeline configuration
+# (This step may vary depending on the pipeline logic)
+```
+
+Congratulations! You have completed the Azure introduction exercise.

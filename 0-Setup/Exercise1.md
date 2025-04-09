@@ -1,104 +1,104 @@
-# Creación de una Red Virtual en Azure
+# Creating a Virtual Network in Azure
 
-Este ejercicio te guiará en la creación de una red virtual en Azure utilizando tanto el Portal de Azure como Azure CLI.
+This exercise will guide you through creating a virtual network in Azure using both the Azure Portal and Azure CLI.
 
-## Requisitos Previos
+## Prerequisites
 
-- Una cuenta activa de Azure
-- Si vas a usar Azure CLI:
-  - [Azure CLI instalado](https://learn.microsoft.com/es-es/cli/azure/install-azure-cli)
-  - Haber iniciado sesión con `az login`
+- An active Azure account
+- If using Azure CLI:
+  - [Azure CLI installed](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+  - Logged in with `az login`
 
-## Método 1: Usando el Portal de Azure
+## Method 1: Using the Azure Portal
 
-1. **Accede al Portal de Azure**
-   - Navega a [portal.azure.com](https://portal.azure.com)
-   - Inicia sesión con tu cuenta de Azure
+1. **Access the Azure Portal**
+   - Navigate to [portal.azure.com](https://portal.azure.com)
+   - Sign in with your Azure account
 
-2. **Crear una Red Virtual**s
-   - En la barra de búsqueda superior, escribe "Redes virtuales"
-   - Haz clic en "Redes virtuales" en los resultados
-   - Haz clic en "+ Crear"
+2. **Create a Virtual Network**
+   - In the top search bar, type "Virtual networks"
+   - Click on "Virtual networks" in the results
+   - Click on "+ Create"
 
-3. **Configuración Básica**
-   - **Suscripción**: Selecciona tu suscripción
-   - **Grupo de recursos**: Crea uno nuevo o selecciona uno existente
-   - **Nombre**: Ingresa un nombre para tu red virtual (ejemplo: `mi-red-virtual`)
-   - **Región**: Selecciona la región más cercana a ti
+3. **Basic Configuration**
+   - **Subscription**: Select your subscription
+   - **Resource group**: Create a new one or select an existing one
+   - **Name**: Enter a name for your virtual network (example: `my-virtual-network`)
+   - **Region**: Select the region closest to you
 
-4. **Configuración de IP**
-   - **Espacio de direcciones IPv4**: Ingresa un rango CIDR (ejemplo: 10.0.0.0/16)
-   - **Subred**:
-     - Nombre: `default`
-     - Rango de subred: 10.0.0.0/24
+4. **IP Configuration**
+   - **IPv4 address space**: Enter a CIDR range (example: 10.0.0.0/16)
+   - **Subnet**:
+     - Name: `default`
+     - Subnet range: 10.0.0.0/24
 
-5. **Revisión y Creación**
-   - Revisa toda la configuración
-   - Haz clic en "Crear"
+5. **Review and Create**
+   - Review all settings
+   - Click "Create"
 
-## Método 2: Usando Azure CLI
+## Method 2: Using Azure CLI
 
-1. **Inicia sesión en Azure**
+1. **Sign in to Azure**
    ```bash
    az login
    ```
 
-2. **Crea un grupo de recursos** (si no tienes uno)
+2. **Create a resource group** (if you don't have one)
    ```bash
    az group create \
-     --name miGrupoRecursos \
+     --name myResourceGroup \
      --location westeurope
    ```
 
-3. **Crea la red virtual con una subred**
+3. **Create the virtual network with a subnet**
    ```bash
    az network vnet create \
-     --name mi-red-virtual \
-     --resource-group miGrupoRecursos \
+     --name my-virtual-network \
+     --resource-group myResourceGroup \
      --location westeurope \
      --address-prefix 10.0.0.0/16 \
      --subnet-name default \
      --subnet-prefix 10.0.0.0/24
    ```
 
-4. **Verifica la creación**
+4. **Verify the creation**
    ```bash
    az network vnet show \
-     --name mi-red-virtual \
-     --resource-group miGrupoRecursos
+     --name my-virtual-network \
+     --resource-group myResourceGroup
    ```
 
-## Verificación
+## Verification
 
-Para comprobar que tu red virtual se ha creado correctamente:
+To verify that your virtual network has been created correctly:
 
-### En el Portal
-- Navega a "Redes virtuales"
-- Busca el nombre de tu red virtual
-- Revisa la información general y las subredes configuradas
+### In the Portal
+- Navigate to "Virtual networks"
+- Look for your virtual network name
+- Review the overview information and configured subnets
 
-### Con Azure CLI
+### With Azure CLI
 ```bash
-# Lista todas las redes virtuales en el grupo de recursos
-az network vnet list --resource-group miGrupoRecursos -o table
+# List all virtual networks in the resource group
+az network vnet list --resource-group myResourceGroup -o table
 
-# Muestra los detalles de una red virtual específica
+# Show details of a specific virtual network
 az network vnet show \
-  --name mi-red-virtual \
-  --resource-group miGrupoRecursos \
+  --name my-virtual-network \
+  --resource-group myResourceGroup \
   --query '{Name:name, AddressSpace:addressSpace.addressPrefixes[0], Subnets:subnets[].name}' \
   -o table
 ```
 
-## Conceptos Importantes
+## Important Concepts
 
-- **Red Virtual**: Un segmento de red aislado en la nube de Azure
-- **Espacio de direcciones**: El rango de direcciones IP disponibles en tu red virtual (en formato CIDR)
-- **Subred**: Una división de tu red virtual que ayuda a organizar y securizar recursos
-- **Grupo de recursos**: Un contenedor lógico para recursos relacionados de Azure
+- **Virtual Network**: An isolated network segment in the Azure cloud
+- **Address Space**: The range of IP addresses available in your virtual network (in CIDR format)
+- **Subnet**: A division of your virtual network that helps organize and secure resources
+- **Resource Group**: A logical container for related Azure resources
 
-## Recursos Adicionales
+## Additional Resources
 
-- [Documentación oficial de Redes Virtuales en Azure](https://learn.microsoft.com/es-es/azure/virtual-network/)
-- [Referencia de comandos de Azure CLI para redes](https://learn.microsoft.com/es-es/cli/azure/network/vnet)
-- [Mejores prácticas para redes virtuales](https://learn.microsoft.com/es-es/azure/virtual-network/virtual-network-vnet-plan-design-arm)
+- [Official Azure Virtual Networks Documentation](https://learn.microsoft.com/en-us/azure/virtual-network/)
+- [Azure CLI network commands reference](https://learn.microsoft.com/en-us/cli/azure/network/vnet)
+- [Virtual network best practices](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-vnet-plan-design-arm)
