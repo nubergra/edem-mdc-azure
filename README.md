@@ -8,17 +8,17 @@ In this course, you'll gain core knowledge of [Microsoft Azure](https://azure.mi
 
 ### Course Sessions
 
-1. **Set Up ⚙️**  
+1. **Set Up ⚙️**
    - Learn how to set up the Azure Portal to start creating cloud services.
    - Explore the portal UI, Azure CLI, and cost management.
 
-2. **Storage 💾**  
+2. **Storage 💾**
    - Understand the primary data storage services in Azure.
 
-3. **Processing ⚡**  
+3. **Processing ⚡**
    - Explore Azure's main data processing services.
 
-4. **End-to-End Project 🏗️**  
+4. **End-to-End Project 🏗️**
    - Apply concepts from previous sessions to build a complete data pipeline using Azure services.
 
 Each session includes guided exercises with instructions and useful references. Some sections also provide optional extra exercises for additional practice.
@@ -27,7 +27,8 @@ Each session includes guided exercises with instructions and useful references. 
 
 Below is the list of exercises included in this repository:
 
-- [Set Up - Exercise 1: Log in to the Azure Portal](./0-Setup/readme.md)
+- [Set Up: Log in to the Azure Portal](./0-Setup/Setup/README.md)
+- [Set Up - Exercise 0: Create Resource Group in Azure](./0-Setup/Exercise0/README.md)
 - [Azure Storage - Exercise 1: Create a Blob Storage Account in Azure](./1-Storage/Exercise01)
 - [Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure  ](./1-Storage/Exercise02)
 - [Azure Storage - Exercise 3: Create an Azure SQL database](./1-Storage/Exercise03)
