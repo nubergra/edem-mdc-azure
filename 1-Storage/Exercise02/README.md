@@ -2,7 +2,7 @@
 
 ## **Objective**  
 
-In this exercise, we will **automate** the creation of an **Azure Blob Storage** account using **Terraform**. We will then develop **Python scripts** to interact with the storage account by:  
+In this exercise, we will **automate** the creation of an **Azure Blob Storage** account and a **container** using **Terraform**. We will then develop **Python scripts** to interact with the storage account by:  
 
 1. Uploading files to a blob storage container.  
 2. Listing all files within the container.  
@@ -18,8 +18,12 @@ In this exercise, we will **automate** the creation of an **Azure Blob Storage**
 
 4. **Implement additional operations** such as downloading, moving, or deleting files using Python.  
 
+## **Tips**
+
+To make sure you create a Blob Storage and not an ADLS storage account, **set the `is_hns_enabled` value to false and the `account_kind` to BlobStorage** when creating the storage account.
+
 ## **Resources**  
 
 - 📌 [Azure Portal](https://portal.azure.com)  
 - 📖 [Azure Blob Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/)
-- 🛠 [Terraform Documentation](https://www.terraform.io/docs)
+- 🛠 [Terraform azurerm Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
