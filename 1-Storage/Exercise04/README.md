@@ -24,4 +24,4 @@ In this exercise, we will automate the creation of an **Azure SQL Database** usi
 
 - 📌 [Azure Portal](https://portal.azure.com)
 - 📖 [Azure SQL Database Documentation](https://learn.microsoft.com/en-us/azure/sql-database/)
-- 🛠 [Terraform Documentation](https://www.terraform.io/docs)
+- 🛠 [Terraform azurerm Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)

@@ -1,8 +1,8 @@
-# **Azure Storage - Exercise 6: Create an Azure Database for PostgreSQL Database**
+# **Azure Storage - Exercise 6: Create an Azure Database for PostgreSQL**
 
 ## **Objective**
 
-In this exercise, we will create an **Azure Database for PostgreSQL** instance using the **Azure Portal**. We will configure it, create a database, and set up tables to store structured data. This will be a **guided exercise** led by the instructor.  
+In this exercise, we will create an **Azure Database for PostgreSQL** instance using the **Azure Portal**. We will configure it, create a database, and set up tables to store structured data. The first part of this excercise will be a **guided exercise** led by the instructor.  
 
 ## **Steps**
 

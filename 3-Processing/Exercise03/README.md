@@ -2,7 +2,7 @@
 
 ## **Objective**  
 
-In this exercise, we will **automate** the creation of an **MQTT broker** in **Azure Event Grid** using **Terraform**. We will then publish messages to the broker, process them in an **Azure Function**, and perform some data transformation. This will be a **guided exercise** led by the instructor.  
+In this exercise, we will **automate** the creation of an **MQTT broker** in **Azure Event Grid** using **Terraform**. We will then publish messages to the broker, process them in an **Azure Function**, and perform some data transformation.
 
 ## **Steps**  
 
@@ -17,4 +17,4 @@ In this exercise, we will **automate** the creation of an **MQTT broker** in **A
 - 📌 [Azure Portal](https://portal.azure.com)  
 - 📖 [Azure Event Grid MQTT Documentation](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-overview)  
 - 📖 [Azure Functions Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)  
-- 🛠 [Terraform Documentation](https://www.terraform.io/docs)
+- 🛠 [Terraform azurerm Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)

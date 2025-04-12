@@ -1,4 +1,4 @@
-# **Azure Storage - Exercise 7: Automating the Creation of an Azure Database for PostgreSQL Database**
+# **Azure Storage - Exercise 7: Automating the Creation of an Azure Database for PostgreSQL**
 
 ## **Objective**
 
@@ -19,4 +19,4 @@ In this exercise, we will automate the creation of an **Azure Database for Postg
 
 - 📌 [Azure Portal](https://portal.azure.com)
 - 📖 [Azure Database for PostgreSQL Documentation](https://learn.microsoft.com/en-us/azure/postgresql/)
-- 🛠 [Terraform Documentation](https://www.terraform.io/docs)
+- 🛠 [Terraform azurerm Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
