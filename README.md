@@ -9,16 +9,20 @@ In this course, you'll gain core knowledge of [Microsoft Azure](https://azure.mi
 ### Course Sessions
 
 1. **Set Up ⚙️**
+
    - Learn how to set up the Azure Portal to start creating cloud services.
    - Explore the portal UI, Azure CLI, and cost management.
 
 2. **Storage 💾**
+
    - Understand the primary data storage services in Azure.
 
 3. **Processing ⚡**
+
    - Explore Azure's main data processing services.
 
 4. **End-to-End Project 🏗️**
+
    - Apply concepts from previous sessions to build a complete data pipeline using Azure services.
 
 Each session includes guided exercises with instructions and useful references. Some sections also provide optional extra exercises for additional practice.
