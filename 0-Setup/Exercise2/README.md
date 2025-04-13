@@ -3,6 +3,7 @@
 In this exercise, you will learn how to set up a virtual machine (VM) in Azure using both the Azure portal and Azure CLI.
 
 ## 🎯 Objectives
+
 1. Create a virtual machine using the Azure portal.
 2. Create a virtual machine using Azure CLI.
 
@@ -26,14 +27,19 @@ In this exercise, you will learn how to set up a virtual machine (VM) in Azure u
 ## 💻 Part 2: Create a Virtual Machine using Azure CLI
 
 1. 🔑 Open a terminal and make sure you're logged into Azure:
+
     ```bash
     az login
     ```
+
 2. 📁 Create a resource group:
+
     ```bash
     az group create --name MyResourceGroup --location eastus
     ```
+
 3. 🚀 Create the virtual machine:
+
     ```bash
     az vm create \
       --resource-group MyResourceGroup \
@@ -42,7 +48,9 @@ In this exercise, you will learn how to set up a virtual machine (VM) in Azure u
       --admin-username azureuser \
       --generate-ssh-keys
     ```
+
 4. ✨ Verify that the virtual machine has been created successfully:
+
     ```bash
     az vm list --resource-group MyResourceGroup --output table
     ```
@@ -54,6 +62,7 @@ In this exercise, you will learn how to set up a virtual machine (VM) in Azure u
 To avoid unnecessary costs, delete the resources created after completing the exercise:
 
 1. 💻 Using Azure CLI:
+
     ```bash
     az group delete --name MyResourceGroup --yes --no-wait
     ```

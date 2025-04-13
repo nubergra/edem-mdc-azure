@@ -39,11 +39,13 @@ This exercise will guide you through creating a virtual network in Azure using b
 ## 💻 Method 2: Using Azure CLI
 
 1. **🔑 Sign in to Azure**
+
    ```bash
    az login
    ```
 
 2. **📁 Create a resource group** (if you don't have one)
+
    ```bash
    az group create \
      --name myResourceGroup \
@@ -51,6 +53,7 @@ This exercise will guide you through creating a virtual network in Azure using b
    ```
 
 3. **🌐 Create the virtual network with a subnet**
+
    ```bash
    az network vnet create \
      --name my-virtual-network \
@@ -62,6 +65,7 @@ This exercise will guide you through creating a virtual network in Azure using b
    ```
 
 4. **✅ Verify the creation**
+
    ```bash
    az network vnet show \
      --name my-virtual-network \
@@ -73,11 +77,13 @@ This exercise will guide you through creating a virtual network in Azure using b
 To verify that your virtual network has been created correctly:
 
 ### 🖥️ In the Portal
+
 - Navigate to "Virtual networks"
 - Look for your virtual network name
 - Review the overview information and configured subnets
 
 ### 💻 With Azure CLI
+
 ```bash
 # List all virtual networks in the resource group
 az network vnet list --resource-group myResourceGroup -o table

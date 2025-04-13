@@ -28,6 +28,7 @@ Install and configure Visual Studio Code with essential Azure extensions for clo
 ## 📚 Exercises
 
 ### [📁 Exercise 0: Create Resource Groups](./Exercise0/README.md)
+
 Learn how to create and manage resource groups in Azure, which are essential for organizing your cloud resources.
 
 ### [🌐 Exercise 1: Virtual Networks](./Exercise1.md)

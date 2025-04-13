@@ -1,6 +1,6 @@
-# Create a Resource Group in Azure
+# 🌟 Create a Resource Group in Azure
 
-## Using the Azure Portal
+## 🖥️ Using the Azure Portal
 
 1. Sign in to the [Azure Portal](https://portal.azure.com).
 2. In the left-hand menu, select **Resource groups**.
@@ -11,35 +11,53 @@
     - **Region**: Select the location where the resources will be stored.
 5. Click on **Review + Create** and then on **Create**.
 
-## Using Azure CLI
+## 📟 Using Azure CLI
+
+### 🔑 Prerequisites
+
+- Azure CLI installed on your machine
+- Active Azure subscription
+
+### 🚀 Step-by-Step Guide
 
 1. Open a terminal with Azure CLI installed.
 2. Make sure you are logged in with `az login`.
-3. Run the following command to create a resource group:
+3. Run the following commands to create and manage a resource group:
 
     ```bash
+    # 1️⃣ Azure Login
     az login
+
+    # 2️⃣ Set Subscription to work with
     az account set --subscription "ID or Name Subscription"
 
-    az_region="<RegionName>"
-    az_suffix="dg"
-    az_project="edem"
-    az_env="development"
+    # 3️⃣ Create the resource group
+    az group create --name <resource_group_name> --location <region_name>
 
-    az_resource_group_name="rg-$az_env-$az_project-$az_suffix"
+    # 4️⃣ Add tags to the resource group
+    az group update --name <resource_group_name>--tags <Tag Key>=<Tag Value>
 
-    az group create --name $az_resource_group_name --location $az_region
-    az group update --name $az_resource_group_name --tags Environment=$az_env Project=$az_project
-
-    az group delete --name $az_resource_group_name --yes --no-wait
+    # 5️⃣ (Optional) Delete the resource group
+    az group delete --name <resource_group_name> --yes --no-wait
     ```
 
-    Replace `<GroupName>` with the desired name and `<RegionName>` with the az_region (e.g., `eastus`,`spaincentral`).
-
-### Example:
+### 📝 Example Usage
 
 ```bash
-az group create --name MyResourceGroup --location eastus
+# Create a resource group in Europe
+az group create --name rg-edem-dogc-001 --location westeurope
 ```
 
-This will create a resource group named `MyResourceGroup` in the `East US` region.
+This command creates a resource group named `rg-edem-dogc-001` in the `westeurope` region.
+
+> 💡 **Note**: Replace the name and location values with your desired configuration.
+
+## 🎯 Objective
+
+The goal of this exercise is to create an Azure Resource Group using Terraform. This will help you understand how to use Infrastructure as Code (IaC) to automate resource creation in Azure.
+
+## 📚 Additional Resources
+
+- [Azure Subscription Service Limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+- [Azure Regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
+- [Resource Naming Conventions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)

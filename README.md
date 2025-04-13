@@ -29,8 +29,10 @@ Below is the list of exercises included in this repository:
 
 - [Set Up: Log in to the Azure Portal](./0-Setup/Setup/README.md)
 - [Set Up - Exercise 0: Create Resource Group in Azure](./0-Setup/Exercise0/README.md)
+- [Set Up - Exercise 0: Create Virtual Network in Azure](./0-Setup/Exercise1/README.md)
+- [Set Up - Exercise 0: Create Virtual Machine in Azure](./0-Setup/Exercise2/README.md)
 - [Azure Storage - Exercise 1: Create a Blob Storage Account in Azure](./1-Storage/Exercise01)
-- [Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure  ](./1-Storage/Exercise02)
+- [Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure](./1-Storage/Exercise02)
 - [Azure Storage - Exercise 3: Create an Azure SQL database](./1-Storage/Exercise03)
 - [Azure Storage - Exercise 4: Automating the creation of an Azure SQL database](./1-Storage/Exercise04)
 - [Azure Storage - Exercise 5: Exploring data in an Azure SQL database](./1-Storage/Exercise05)
