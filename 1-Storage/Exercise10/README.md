@@ -6,14 +6,12 @@ In this exercise, we will automate the creation of an **Azure Cosmos DB for Mong
 
 ## **Steps**
 
-1. **Write Terraform configuration** to create an **Azure Cosmos DB for MongoDB** account.
-2. **Apply the Terraform configuration** to provision the Cosmos DB for MongoDB account.
-3. **Create a database and collection** inside the Cosmos DB for MongoDB account.
-4. **Use Python scripts** to insert sample documents (e.g., customer orders) into the collection.
-6. **Use MongoDB shell or Python scripts** to query and manage the data within the Cosmos DB MongoDB collection.
+1. Create an **Azure Cosmos DB for MongoDB account** and create a **database and container inside CosmosDB for MongoDB** via Terraform.
+2. **Use Python scripts** to insert sample documents (e.g., customer orders) into the collection.
+3. **Use MongoDB shell or Python scripts** to query and manage the data within the Cosmos DB MongoDB collection.
 
 ## **Resources**
 
 - 📌 [Azure Portal](https://portal.azure.com)
 - 📖 [Azure Cosmos DB for MongoDB Documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/)
-- 🛠 [Terraform Documentation](https://www.terraform.io/docs)
+- 🛠 [Terraform azurerm Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
