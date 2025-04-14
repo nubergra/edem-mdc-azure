@@ -38,3 +38,20 @@ Create and configure virtual networks in Azure using both the Azure Portal and A
 ### [🖥️ Exercise 2: Virtual Machines](./Exercise2.md)
 
 Set up virtual machines in Azure and understand the basics of VM management.
+
+## 🌩️ Cloud Services Comparison: Azure, GCP, and AWS
+
+| Feature/Service         | Azure                          | GCP (Google Cloud Platform)       | AWS (Amazon Web Services)         |
+|--------------------------|--------------------------------|------------------------------------|------------------------------------|
+| Compute                 | Azure Virtual Machines         | Compute Engine                    | EC2 (Elastic Compute Cloud)       |
+| Storage                 | Azure Blob Storage             | Cloud Storage                     | S3 (Simple Storage Service)       |
+| Databases               | Azure SQL Database             | Cloud SQL                         | RDS (Relational Database Service) |
+| Networking              | Azure Virtual Network (VNet)   | Virtual Private Cloud (VPC)       | VPC (Virtual Private Cloud)       |
+| Serverless Computing    | Azure Functions                | Cloud Functions                   | AWS Lambda                        |
+| Machine Learning        | Azure Machine Learning         | AI Platform                       | SageMaker                         |
+| Container Orchestration | Azure Kubernetes Service (AKS) | Google Kubernetes Engine (GKE)    | Amazon Elastic Kubernetes Service (EKS) |
+| Identity Management     | Azure Active Directory         | Cloud Identity                    | AWS IAM (Identity and Access Management) |
+| Monitoring              | Azure Monitor                  | Stackdriver (now Cloud Operations)| Amazon CloudWatch                 |
+| Pricing Model           | Pay-as-you-go                  | Pay-as-you-go                     | Pay-as-you-go                     |
+
+This table provides a high-level comparison of key services offered by Azure, GCP, and AWS, helping you understand their similarities and differences.
