@@ -35,15 +35,15 @@ In this exercise, you will learn how to set up a virtual machine (VM) in Azure u
 2. 📁 Create a resource group:
 
     ```bash
-    az group create --name MyResourceGroup --location eastus
+    az group create --name rg-edem-dogc-001 --location westeurope
     ```
 
 3. 🚀 Create the virtual machine:
 
     ```bash
     az vm create \
-      --resource-group MyResourceGroup \
-      --name MyVirtualMachine \
+      --resource-group rg-edem-dogc-001 \
+      --name vm-edem-dogc \
       --image UbuntuLTS \
       --admin-username azureuser \
       --generate-ssh-keys
@@ -52,7 +52,7 @@ In this exercise, you will learn how to set up a virtual machine (VM) in Azure u
 4. ✨ Verify that the virtual machine has been created successfully:
 
     ```bash
-    az vm list --resource-group MyResourceGroup --output table
+    az vm list --resource-group rg-edem-dogc-001 --output table
     ```
 
 ---

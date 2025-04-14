@@ -23,7 +23,7 @@ This exercise will guide you through creating a virtual network in Azure using b
 3. **⚙️ Basic Configuration**
    - **Subscription**: Select your subscription
    - **Resource group**: Create a new one or select an existing one
-   - **Name**: Enter a name for your virtual network (example: `my-virtual-network`)
+   - **Name**: Enter a name for your virtual network (example: `vnet-edem-001`)
    - **Region**: Select the region closest to you
 
 4. **📝 IP Configuration**
@@ -48,7 +48,7 @@ This exercise will guide you through creating a virtual network in Azure using b
 
    ```bash
    az group create \
-     --name myResourceGroup \
+     --name rg-edem-dogc-001 \
      --location westeurope
    ```
 
@@ -56,11 +56,11 @@ This exercise will guide you through creating a virtual network in Azure using b
 
    ```bash
    az network vnet create \
-     --name my-virtual-network \
-     --resource-group myResourceGroup \
+     --name vnet-edem-001 \
+     --resource-group rg-edem-dogc-001 \
      --location westeurope \
      --address-prefix 10.0.0.0/16 \
-     --subnet-name default \
+     --subnet-name snet-vm \
      --subnet-prefix 10.0.0.0/24
    ```
 
@@ -68,8 +68,8 @@ This exercise will guide you through creating a virtual network in Azure using b
 
    ```bash
    az network vnet show \
-     --name my-virtual-network \
-     --resource-group myResourceGroup
+     --name vnet-edem-001 \
+     --resource-group rg-edem-dogc-001
    ```
 
 ## 🔍 Verification
@@ -86,12 +86,12 @@ To verify that your virtual network has been created correctly:
 
 ```bash
 # List all virtual networks in the resource group
-az network vnet list --resource-group myResourceGroup -o table
+az network vnet list --resource-group rg-edem-dogc-001 -o table
 
 # Show details of a specific virtual network
 az network vnet show \
   --name my-virtual-network \
-  --resource-group myResourceGroup \
+  --resource-group rg-edem-dogc-001 \
   --query '{Name:name, AddressSpace:addressSpace.addressPrefixes[0], Subnets:subnets[].name}' \
   -o table
 ```
@@ -102,6 +102,10 @@ az network vnet show \
 - **📝 Address Space**: The range of IP addresses available in your virtual network (in CIDR format)
 - **🔄 Subnet**: A division of your virtual network that helps organize and secure resources
 - **📁 Resource Group**: A logical container for related Azure resources
+
+## 🎯 Objective
+
+The final goal of this exercise is to create an Azure Virtual Network using Terraform. This will help you understand how to use Infrastructure as Code (IaC) to automate resource creation in Azure.
 
 ## 📖 Additional Resources
 

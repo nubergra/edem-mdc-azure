@@ -54,7 +54,7 @@ This command creates a resource group named `rg-edem-dogc-001` in the `westeurop
 
 ## 🎯 Objective
 
-The goal of this exercise is to create an Azure Resource Group using Terraform. This will help you understand how to use Infrastructure as Code (IaC) to automate resource creation in Azure.
+The final goal of this exercise is to create an Azure Resource Group using Terraform. This will help you understand how to use Infrastructure as Code (IaC) to automate resource creation in Azure.
 
 ## 📚 Additional Resources
 

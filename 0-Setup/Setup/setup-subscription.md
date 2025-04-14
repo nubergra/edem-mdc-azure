@@ -30,3 +30,23 @@
 
 1. Once registered, access the [Azure portal](https://portal.azure.com/).
 2. Explore the available free services and start using them.
+
+## 🏗️ Azure Architecture Center
+
+The [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/) is a comprehensive resource for designing and implementing cloud solutions. It provides:
+
+1. **Best Practices**: Guidance on building secure, scalable, and resilient solutions.
+2. **Reference Architectures**: Pre-designed architectures for common scenarios.
+3. **Patterns and Practices**: Proven methods to solve design challenges.
+
+Explore the Architecture Center to plan and optimize your cloud solutions effectively.
+
+## 💰 Azure Pricing Calculator
+
+The [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) helps you estimate the cost of Azure services. Here's how to use it:
+
+1. Select the services you plan to use.
+2. Configure the settings for each service (e.g., region, instance type).
+3. View the estimated monthly cost and adjust as needed.
+
+Use the calculator to plan your budget and avoid unexpected expenses.
