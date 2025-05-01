@@ -2,7 +2,7 @@
 
 ## **Objective**  
 
-In this exercise, we will deploy an **Azure Container App** using a quickstart image. Then, we will automate the deployment with **Terraform**, using the image uploaded to **Azure Container Registry** in the previous exercise. The first two steps of the excercise will be a **guided exercise** led by the instructor.
+In this exercise, we will deploy an **Azure Container App** using a quickstart image. Then, we will automate the deployment with **Terraform**, using the image uploaded to **Azure Container Registry** in the previous exercise. The first two steps of the exercise will be a **guided exercise** led by the instructor.
 
 ## **Steps**  
 

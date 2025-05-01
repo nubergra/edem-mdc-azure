@@ -2,7 +2,7 @@
 
 ## **Objective**  
 
-In this exercise, we will create a **Docker container** locally, then push it to **Azure Container Registry (ACR)** using the **Azure CLI**. The first part of this excercise will be a **guided exercise** led by the instructor.  
+In this exercise, we will create a **Docker container** locally, then push it to **Azure Container Registry (ACR)** using the **Azure CLI**. The first part of this exercise will be a **guided exercise** led by the instructor.  
 
 ## **Steps**  
 

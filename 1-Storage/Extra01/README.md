@@ -10,7 +10,7 @@ The app should have the following features:
 - A page with the **photo gallery**, where you should see every **image** uploaded to Azure Blob Storage and its **name**.
 
 ## **Keep in mind...**
-- You don't need to serve the Streamlit app for this excercise, it can be run locally.
+- You don't need to serve the Streamlit app for this exercise, it can be run locally.
 - As an **extra**, you can add buttons to **delete images** from the gallery, **rename** them, etc.
 - You can also use **FastAPI** to create endpoints for the operations against Azure Blob Storage to separate the UI from the backend.
 

@@ -7,9 +7,33 @@ In this exercise, we will create an **Azure Cosmos DB for NoSQL account** using 
 ## **Steps**
 
 1. **Create an Azure Cosmos DB for NoSQL account** using the **Azure Portal** (choose the **Core (SQL) API** for NoSQL).
-2. **Create a new database** and a **container** inside the Cosmos DB account.
-3. **Insert sample data** into the container using the **Azure Portal**.
-4. **Explore the data** using CosmosDB **Data Explorer** in the Azure Portal.
+2. From the **Data Explorer**, create a **container** and **database** to store holiday songs.
+3. **Insert sample data** into the container using the **Azure Portal**:
+
+```json
+{
+  "year": 2011,
+  "position": 1,
+  "song": "All I Want For Christmas Is You",
+  "artist": "Mariah Carey",
+  "chart_date": "2011-12-10",
+}
+```
+
+4. **Explore the data** using CosmosDB **Data Explorer** in the Azure Portal. Run this query:
+
+```sql
+SELECT VALUE {
+    "year": h.year,
+    "artist": h.artist,
+    "song_position": CONCAT(h.song, ' - ', TO_STRING(h.position))
+}
+FROM
+    holiday_songs h
+WHERE
+    STRINGEQUALS(h.artist, "Mariah Carey", true)
+```
+5. Once you finish the exercise, **delete** the Cosmos DB account.
 
 ## **Resources**
 
