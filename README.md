@@ -52,7 +52,7 @@ Below is the list of exercises included in this repository:
 - [Azure Processing - Extra Exercise 1: Route HTTP triggered Azure Function data to an Azure Event Hub](./2-Processing/Extra01)
 - [Azure Processing - Exercise 4: Upload a Docker image to Azure Container Registry](./2-Processing/Exercise04/)
 - [Azure Processing - Exercise 5: Deploy an Azure Container App](./2-Processing/Exercise05/)
-- [Azure Processing - Exercise 6: Azure Container App for data processing](./2-Processing/Exercise06/)
+- [Azure Processing - Exercise 6: Azure Container App for data transformation](./2-Processing/Exercise06/)
 - [Azure Processing - Exercise 7: Create a Data Factory](./2-Processing/Exercise07/)
 - [Azure Processing - Exercise 8: Simple pipeline in Data Factory](./2-Processing/Exercise08/)
 - [Azure Processing - Exercise 9: Data Processing in Data Factory](./2-Processing/Exercise09/)
