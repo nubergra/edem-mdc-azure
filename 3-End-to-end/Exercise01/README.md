@@ -24,10 +24,10 @@ Each message represents a **real-time transaction**:
 
 ## **Steps**  
 
-1. Using a **Python script**, **publish JSON messages** with sales transaction data to **Azure Event Hub**.  
-2. **Trigger an Azure Function** that **reads messages** from **Event Hub**.  
+1. Using a **Python script**, **publish JSON messages** with simulated sales transaction data to **Azure Event Hub**. The Python script should be containerized and **deployed in Azure Container Apps**.
+2. **Create an Azure Function** that **is triggered** by **Event Hub**.  
 3. **Process and transform the data** in **Azure Functions**, **transforming the data** into a structured format.  
-4. **Store the transformed data** into **Azure CosmosDB (MongoDB API)**.  
+4. **Store the transformed data** into **Azure CosmosDB (MongoDB API)**. 
 
 ## Extra
 

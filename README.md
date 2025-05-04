@@ -60,4 +60,5 @@ Below is the list of exercises included in this repository:
 
 ## End-to-end
 - [Azure End-to-end - Exercise 1: Azure Event Hubs & Azure Functions & Azure CosmosDB](./3-End-to-end/Exercise01)
-- [Azure End-to-end - Exercise 2 (Extra): Blob Storage & Data Factory & Azure SQL Database](./3-End-to-end/Extra01)
+- [Azure End-to-end - Exercise 2: Blob Storage & Data Factory & Azure SQL Database](./3-End-to-end/Exercise02)
+- [Azure End-to-end - Extra Exercise 1: Defining an architecture and calculating its costs](./3-End-to-end/Extra01/)
