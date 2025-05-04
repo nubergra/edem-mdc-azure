@@ -40,4 +40,4 @@ Create a centralized cloud-based dashboard to **ingest and visualize real-time v
 ## **Resources**  
 
 - 📌 [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=031b26ad269166ac0a58327e2796675a)  
-- 📖 [draw.io](https://www.drawio.com/)
+- 🖌 [draw.io](https://www.drawio.com/)

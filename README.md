@@ -37,7 +37,7 @@ Below is the list of exercises included in this repository:
 - [Set Up - Exercise 1: Create Virtual Network in Azure](./0-Setup/Exercise1/README.md)
 - [Set Up - Exercise 2: Create Virtual Machine in Azure](./0-Setup/Exercise2/README.md)
 
-## Storage
+### Storage
 - [Azure Storage - Exercise 1: Create a Blob Storage Account in Azure](./1-Storage/Exercise01)
 - [Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure](./1-Storage/Exercise02)
 - [Azure Storage - Extra Exercise 1: My Photo Gallery](./1-Storage/Extra01)
@@ -52,7 +52,7 @@ Below is the list of exercises included in this repository:
 - [Azure Storage - Exercise 10: Automating the Creation of an Azure Cosmos DB for MongoDB account](./1-Storage/Exercise10)
 - [Azure Storage - Extra Exercise 3: Automating the Creation of an Azure Cosmos DB for PostgreSQL account](./1-Storage/Extra03)
 
-## Processing
+### Processing
 - [Azure Processing - Exercise 1: Create an Azure Function](./2-Processing/Exercise01/)
 - [Azure Processing - Exercise 2: Create an Azure Event Hub](./2-Processing/Exercise02/)
 - [Azure Processing - Exercise 3: Route Azure Event Hub events to Azure Functions](./2-Processing/Exercise03/)
@@ -65,7 +65,7 @@ Below is the list of exercises included in this repository:
 - [Azure Processing - Exercise 9: Data Processing in Data Factory](./2-Processing/Exercise09/)
 - [Azure Processing - Extra Exercise 2: Dynamic pipelines in Data Factory](./2-Processing/Extra02/)
 
-## End-to-end
+### End-to-end
 - [Azure End-to-end - Exercise 1: Azure Event Hubs & Azure Functions & Azure CosmosDB](./3-End-to-end/Exercise01)
 - [Azure End-to-end - Exercise 2: Blob Storage & Data Factory & Azure SQL Database](./3-End-to-end/Exercise02)
 - [Azure End-to-end - Extra Exercise 1: Defining an architecture and calculating its costs](./3-End-to-end/Extra01/)
