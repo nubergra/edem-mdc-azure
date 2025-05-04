@@ -2,11 +2,11 @@
 
 ## **Objective**  
 
-In this exercise, we will deploy an **Azure Container App** using a quickstart image. Then, we will automate the deployment with **Terraform**, using the image uploaded to **Azure Container Registry** in the previous exercise. The first two steps of the excercise will be a **guided exercise** led by the instructor.
+In this exercise, we will deploy an **Azure Container App** using the previously created container. Then, we will automate the deployment with **Terraform**, using the image uploaded to **Azure Container Registry** in the previous exercise. The first two steps of the exercise will be a **guided exercise** led by the instructor.
 
 ## **Steps**  
 
-1. **Deploy a quickstart container app** using the **Azure Portal**.  
+1. **Deploy a container app** using the **Azure Portal** with the previously created container.  
 2. **Delete the container app** to start fresh.  
 3. **Use Terraform to deploy the container app** using the image from **Azure Container Registry**.  
 4. **Access the deployed container app** via its public URL.  

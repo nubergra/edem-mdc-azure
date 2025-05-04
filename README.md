@@ -31,10 +31,13 @@ Each session includes guided exercises with instructions and useful references. 
 
 Below is the list of exercises included in this repository:
 
+### Set Up
 - [Set Up - Log in to the Azure Portal](./0-Setup/Setup/README.md)
 - [Set Up - Exercise 0: Create Resource Group in Azure](./0-Setup/Exercise0/README.md)
 - [Set Up - Exercise 1: Create Virtual Network in Azure](./0-Setup/Exercise1/README.md)
 - [Set Up - Exercise 2: Create Virtual Machine in Azure](./0-Setup/Exercise2/README.md)
+
+## Storage
 - [Azure Storage - Exercise 1: Create a Blob Storage Account in Azure](./1-Storage/Exercise01)
 - [Azure Storage - Exercise 2: Automating Blob Storage Creation in Azure](./1-Storage/Exercise02)
 - [Azure Storage - Extra Exercise 1: My Photo Gallery](./1-Storage/Extra01)
@@ -48,14 +51,21 @@ Below is the list of exercises included in this repository:
 - [Azure Storage - Exercise 9: Automating the creation of an Azure Cosmos DB for NoSQL account](./1-Storage/Exercise09)
 - [Azure Storage - Exercise 10: Automating the Creation of an Azure Cosmos DB for MongoDB account](./1-Storage/Exercise10)
 - [Azure Storage - Extra Exercise 3: Automating the Creation of an Azure Cosmos DB for PostgreSQL account](./1-Storage/Extra03)
-- [Azure Processing - Exercise 1: Create an Azure Function](./3-Processing/Exercise01/)
-- [Azure Processing - Exercise 2: Create an MQTT broker in Azure Event Grid](./3-Processing/Exercise02/)
-- [Azure Processing - Exercise 3: Route MQTT messages in Azure Event Grid to Azure Functions](./3-Processing/Exercise03/)
-- [Azure Processing - Exercise 4: Upload a Docker image to Azure Container Registry](./3-Processing/Exercise04/)
-- [Azure Processing - Exercise 5: Deploy an Azure Container App](./3-Processing/Exercise05/)
-- [Azure Processing - Exercise 6: Azure Container App for data processing](./3-Processing/Exercise06/)
-- [Azure Processing - Exercise 7: Create a Data Factory](./3-Processing/Exercise07/)
-- [Azure Processing - Exercise 8: Simple ETL in Data Factory](./3-Processing/Exercise08/)
-- [Azure Processing - Exercise 9: Data Processing in Data Factory](./3-Processing/Exercise09/)
-- [Azure End-to-end - Exercise 1: Azure Event Hubs & Azure Functions & Azure CosmosDB](./4-End-to-end/Exercise01)
-- [Azure End-to-end - Extra Exercise: Blob Storage & Data Factory & Azure SQL Database](./4-End-to-end/Extra)
+
+## Processing
+- [Azure Processing - Exercise 1: Create an Azure Function](./2-Processing/Exercise01/)
+- [Azure Processing - Exercise 2: Create an Azure Event Hub](./2-Processing/Exercise02/)
+- [Azure Processing - Exercise 3: Route Azure Event Hub events to Azure Functions](./2-Processing/Exercise03/)
+- [Azure Processing - Extra Exercise 1: Route HTTP triggered Azure Function data to an Azure Event Hub](./2-Processing/Extra01)
+- [Azure Processing - Exercise 4: Upload a Docker image to Azure Container Registry](./2-Processing/Exercise04/)
+- [Azure Processing - Exercise 5: Deploy an Azure Container App](./2-Processing/Exercise05/)
+- [Azure Processing - Exercise 6: Azure Container App for data transformation](./2-Processing/Exercise06/)
+- [Azure Processing - Exercise 7: Create a Data Factory](./2-Processing/Exercise07/)
+- [Azure Processing - Exercise 8: Simple pipeline in Data Factory](./2-Processing/Exercise08/)
+- [Azure Processing - Exercise 9: Data Processing in Data Factory](./2-Processing/Exercise09/)
+- [Azure Processing - Extra Exercise 2: Dynamic pipelines in Data Factory](./2-Processing/Extra02/)
+
+## End-to-end
+- [Azure End-to-end - Exercise 1: Azure Event Hubs & Azure Functions & Azure CosmosDB](./3-End-to-end/Exercise01)
+- [Azure End-to-end - Exercise 2: Blob Storage & Data Factory & Azure SQL Database](./3-End-to-end/Exercise02)
+- [Azure End-to-end - Extra Exercise 1: Defining an architecture and calculating its costs](./3-End-to-end/Extra01/)
