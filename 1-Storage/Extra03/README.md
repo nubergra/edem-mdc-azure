@@ -10,10 +10,6 @@ In this **extra exercise**, we will automate the creation of an **Azure Cosmos D
 2. **Use Python scripts** to insert and query relational data (e.g., customer orders and product data).
 3. **Explore the data** using the **Azure Portal UI** and SQL queries.
 
-## **Extras (Optional)**
-
-4. **Use SQL queries** via Python or the **Azure Portal** to interact with the PostgreSQL database.
-
 ## **Resources**
 
 - 📌 [Azure Portal](https://portal.azure.com)
