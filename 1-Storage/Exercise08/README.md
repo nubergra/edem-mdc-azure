@@ -16,7 +16,7 @@ In this exercise, we will create an **Azure Cosmos DB for NoSQL account** using 
   "position": 1,
   "song": "All I Want For Christmas Is You",
   "artist": "Mariah Carey",
-  "chart_date": "2011-12-10",
+  "chart_date": "2011-12-10"
 }
 ```
 
