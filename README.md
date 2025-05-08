@@ -60,10 +60,11 @@ Below is the list of exercises included in this repository:
 - [Azure Processing - Exercise 4: Upload a Docker image to Azure Container Registry](./2-Processing/Exercise04/)
 - [Azure Processing - Exercise 5: Deploy an Azure Container App](./2-Processing/Exercise05/)
 - [Azure Processing - Exercise 6: Azure Container App for data transformation](./2-Processing/Exercise06/)
+- [Azure Processing - Extra Exercise 2: Streamlit App for Interactive Data Analysis using Azure Container Apps](./2-Processing/Extra02/)
 - [Azure Processing - Exercise 7: Create a Data Factory](./2-Processing/Exercise07/)
 - [Azure Processing - Exercise 8: Simple pipeline in Data Factory](./2-Processing/Exercise08/)
 - [Azure Processing - Exercise 9: Data Processing in Data Factory](./2-Processing/Exercise09/)
-- [Azure Processing - Extra Exercise 2: Dynamic pipelines in Data Factory](./2-Processing/Extra02/)
+- [Azure Processing - Extra Exercise 3: Dynamic pipelines in Data Factory](./2-Processing/Extra03/)
 
 ### End-to-end
 - [Azure End-to-end - Exercise 1: Azure Event Hubs & Azure Functions & Azure CosmosDB](./3-End-to-end/Exercise01)
