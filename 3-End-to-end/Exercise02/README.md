@@ -4,6 +4,8 @@
 
 In this exercise, we will define a batch **ETL (Extract, Transform, Load) process** using **Azure Blob Storage**, **Azure Data Factory**, and **Azure SQL Database**. We will ingest [sample retail data from **CSV files**](../../1-Storage/Exercise02/data/), and load it into an **Azure SQL Database** using **Azure Data Factory** pipelines.
 
+![End-to-end diagram](./images/e2e_exercise2.png)
+
 ## **Steps**  
 
 1. **Upload sample CSV files** to **Azure Blob Storage**.  
@@ -11,11 +13,11 @@ In this exercise, we will define a batch **ETL (Extract, Transform, Load) proces
 
 Feel free to create as many tables as you like with the transformations you come up with. You could also generate a table with the **total sales per product**.
 
-## Extra
+If you want, you can use Terraform to deploy the **Blob Storage** and **Azure SQL** resources.
+
+## **Extra**
 
 3. Modify the Data Factory pipeline to simultainously write to another database of your choice. 
-
-## Resources
 
 ## **Resources**  
 
