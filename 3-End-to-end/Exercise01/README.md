@@ -4,6 +4,8 @@
 
 In this exercise, we will set up a **real-time event processing pipeline** using **Azure Container Apps**, **Azure Event Hub**, **Azure Functions** and **Azure CosmosDB (NoSQL API)**.  
 
+![End-to-end diagram](./images/e2e_exercise1.png)
+
 ## **Sample Data (JSON Messages in Event Hub)**  
 
 Each message represents a **real-time transaction**:  
