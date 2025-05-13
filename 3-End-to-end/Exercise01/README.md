@@ -26,7 +26,7 @@ Each message represents a **real-time transaction**:
 
 ## **Steps**  
 
-0. You should use **Terraform to automate the deplooyment of the Azure resources**.
+0. You should use **Terraform to automate the deployment of the Azure resources**.
 1. Using a **Python script**, **publish JSON messages** with simulated sales transaction data to **Azure Event Hub**. The Python script should be containerized and **deployed in Azure Container Apps**.
 2. **Create an Azure Function** that **is triggered** by **Event Hub**.
 3. **Process and transform the data** in **Azure Functions**, **transforming the data** into a structured format.  

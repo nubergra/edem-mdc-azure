@@ -17,7 +17,7 @@ If you want, you can use Terraform to deploy the **Blob Storage** and **Azure SQ
 
 ## **Extra**
 
-3. Modify the Data Factory pipeline to simultainously write to another database of your choice. 
+3. Modify the Data Factory pipeline to simultaneously write to another database of your choice. 
 
 ## **Resources**  
 
