@@ -2,7 +2,7 @@
 
 ## **Objective**  
 
-In this exercise, we will set up a **real-time event processing pipeline** using **Azure Container Apps**, **Azure Event Hub**, **Azure Functions** and **Azure CosmosDB (NoSQL API)**.  
+In this exercise, we will set up a **real-time event processing pipeline** using **Azure Container Apps**, **Azure Event Hub**, **Azure Functions** and **Azure CosmosDB (MongoDB API)**.  
 
 ![End-to-end diagram](./images/e2e_exercise1.png)
 
@@ -30,7 +30,7 @@ Each message represents a **real-time transaction**:
 1. Using a **Python script**, **publish JSON messages** with simulated sales transaction data to **Azure Event Hub**. The Python script should be containerized and **deployed in Azure Container Apps**.
 2. **Create an Azure Function** that **is triggered** by **Event Hub**.
 3. **Process and transform the data** in **Azure Functions**, **transforming the data** into a structured format.  
-4. **Store the transformed data** into **Azure CosmosDB (NoSQL API)**. 
+4. **Store the transformed data** into **Azure CosmosDB (MongoDB API)**. 
 
 ### **Azure Functions alternative**
 
