@@ -32,10 +32,16 @@ Each message represents a **real-time transaction**:
 3. **Process and transform the data** in **Azure Functions**, **transforming the data** into a structured format.  
 4. **Store the transformed data** into **Azure CosmosDB (MongoDB API)**. 
 
-### **Azure Functions alternative**
+### **Azure Functions tips**
 
-- If you have trouble deploying your Azure Function to Azure, you can **try to use v1 functions instead of v2**, which are supposed to be more stable.
+- If your deployment type for the Azure Function App is **Consumption**, deployment from VSCode won't work. Try using the [**zip push deployment**](https://learn.microsoft.com/en-us/azure/azure-functions/deployment-zip-push) instead, by building a zip with the Azure Funcion Python file, the host.json file and the requirements.txt file and deploying from the Azure CLI with:
+
+```
+az functionapp deployment source config-zip -g <resource_group> -n <app_name> --src <zip_file_path>
+```
+
 - You could also **substitute the Azure Function to process data with another container in Azure Container Apps**. 
+
 
 ## **Extra**
 5. Deploy a **new Azure Container Apps with a Streamlit app** that reads the data from CosmosDB and shows a **dashboard with insights on the data**, like, for example, the total sales per payment method, total amount per product, most bought product... and anything else you can think of. Ideally, you should deploy **another container app with an API that will make the calls to CosmosDB** to expose the data instead of directly querying data from the Streamlit UI.
