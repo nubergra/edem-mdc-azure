@@ -13,6 +13,7 @@ In this exercise, we will automate the creation of an **Azure SQL Database** usi
 ## **Extras (Optional)**
 
 4. **Perform additional operations** such as querying data or updating records using Python.
+5. Use the **Query Editor** in the portal to look through data and creating business views that combine data from multiple tables.
 
 ## **Tips**
 
