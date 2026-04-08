@@ -53,9 +53,8 @@ Below is the list of exercises included in this repository:
 - [Azure Storage - Extra Exercise 3: Automating the Creation of an Azure Cosmos DB for PostgreSQL account](./1-Storage/Extra03)
 
 ### Processing
-- [Azure Processing - Exercise 1: Create an Azure Function](./2-Processing/Exercise01/)
-- [Azure Processing - Exercise 2: Create an Azure Event Hub](./2-Processing/Exercise02/)
-- [Azure Processing - Exercise 3: Route Azure Event Hub events to Azure Functions](./2-Processing/Exercise03/)
+- [Azure Processing - Exercise 1: Create an Azure Event Hub](./2-Processing/Exercise01/)
+- [Azure Processing - Exercise 2: Automating Azure Event Hub Creation](./2-Processing/Exercise02/)
 - [Azure Processing - Extra Exercise 1: Route HTTP triggered Azure Function data to an Azure Event Hub](./2-Processing/Extra01)
 - [Azure Processing - Exercise 4: Upload a Docker image to Azure Container Registry](./2-Processing/Exercise04/)
 - [Azure Processing - Exercise 5: Deploy an Azure Container App](./2-Processing/Exercise05/)
