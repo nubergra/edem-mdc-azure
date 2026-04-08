@@ -1,17 +1,17 @@
-# Azure Processing - Exercise 1: Create an Azure Function
+# Azure Processing - Exercise 1: Create an Azure Event Hub
 
 ## **Objective**  
 
-In this exercise, we will create a simple **Azure Function** using the **Azure Portal**. We will trigger the function within the portal to understand how Azure Functions work. The first part of this exercise will be a **guided exercise** led by the instructor.  
+In this exercise, we will create an **Azure Event Hub** using the Azure Portal and **publish messages to the event hub**. The first part of this exercise will be a **guided exercise** led by the instructor.  
 
 ## **Steps**  
 
-1. **Create an Azure Function App** using the **Azure Portal**. Azure Function App is the **hosting environment for one or more Azure Functions**.
-2. From the **environment of your choosing**, create a simple function (e.g., an HTTP-triggered function) and deploy it to the Azure Function App.  
-3. From the Portal, **run the function** and **view the execution results** in the logs.  
-4. Once you are done with the exercise, **delete** the created resources.
+1. **Create an an Event Hubs namespace** in the **Azure Portal**. It provides a unique scope containers in which to create one or more event hubs.  
+2. **Create an Event Hub** within the namespace.
+3. **Publish events** to the Event Hub and **view the events** using the Azure Portal with the **Data Explorer** feature.
+4. Once you are done with the exercise, **delete** the created Event Hubs Namespace.
 
 ## **Resources**  
 
 - 📌 [Azure Portal](https://portal.azure.com)  
-- 📖 [Azure Functions Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
+- 📖 [Azure Event Hub Documentation](https://learn.microsoft.com/en-us/azure/event-hubs/)  
