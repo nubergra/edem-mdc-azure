@@ -43,7 +43,7 @@ Below is the list of exercises included in this repository:
 - [Azure Storage - Extra Exercise 1: My Photo Gallery](./1-Storage/Extra01)
 - [Azure Storage - Exercise 3: Create an Azure SQL database](./1-Storage/Exercise03)
 - [Azure Storage - Exercise 4: Automating the creation of an Azure SQL database](./1-Storage/Exercise04)
-- [Azure Storage - Exercise 5: Exploring data in an Azure SQL database](./1-Storage/Exercise05)
+- [Azure Storage - Exercise 5: Building a Simple Data Lake with Azure Data Lake Storage](./1-Storage/Exercise05)
 - [Azure Storage - Exercise 6: Create an Azure Database for PostgreSQL](./1-Storage/Exercise06)
 - [Azure Storage - Exercise 7: Automating the creation of an Azure Database for PostgreSQL](./1-Storage/Exercise07)
 - [Azure Storage - Extra Exercise 2: Using pgvector extension to provision data for AI with Azure Database for PostgreSQL](./1-Storage/Extra02)
