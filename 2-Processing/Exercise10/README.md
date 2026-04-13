@@ -1,10 +1,10 @@
-# Azure End-to-end - Exercise 2: Blob Storage & Data Factory & Azure SQL Database
+# Azure Processing - Exercise 10: Blob Storage & Data Factory & Azure SQL Database
 
 ## **Objective**  
 
 In this exercise, we will define a batch **ETL (Extract, Transform, Load) process** using **Azure Blob Storage**, **Azure Data Factory**, and **Azure SQL Database**. We will ingest [sample retail data from **CSV files**](../../1-Storage/Exercise02/data/), and load it into an **Azure SQL Database** using **Azure Data Factory** pipelines.
 
-![End-to-end diagram](./images/e2e_exercise2.png)
+![Data Factory end-to-end diagram](./images/data_factory_e2e.png)
 
 ## **Steps**  
 

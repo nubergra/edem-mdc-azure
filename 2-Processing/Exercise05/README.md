@@ -1,18 +1,25 @@
-# Azure Processing - Exercise 5: Deploy an Azure Container App
+# Azure Processing - Exercise 5: Azure Container App for data transformation
 
 ## **Objective**  
 
-In this exercise, we will deploy an **Azure Container App** using the previously created container. Then, we will automate the deployment with **Terraform**, using the image uploaded to **Azure Container Registry** in the previous exercise. The first two steps of the exercise will be a **guided exercise** led by the instructor.
+In this exercise, we will modify our **Azure Container App** that exposes an API for **data transformation** using FastAPI. The app will accept a CSV file upload, filter specific data, and return the result in JSON format.
 
 ## **Steps**  
 
-1. **Deploy a container app** using the **Azure Portal** with the previously created container.  
-2. **Delete the container app** to start fresh.  
-3. **Use Terraform to deploy the container app** using the image from **Azure Container Registry**.  
-4. **Access the deployed container app** via its public URL.  
+1. **Modify the FastAPI application** endpoint to accept a CSV file upload via an endpoint. The endpoint has to parse the file and apply a simple filter. You can use the [netflix.csv](./data/netflix.csv) file and filter by movies and series with rating == "PG-13", for example. Return filtered results as JSON in the response.
+2. **Containerize the updated application** with a new name using Docker and push it to ACR.   
+3. **Deploy a new container app via Terraform** to **Azure Container Apps**.  
+4. **Test the application** by sending data to process.  
+
+⚠ Do not delete the Azure Container Registry when you are done, it will be used in the next exercise.
+
+## **Extra**
+
+- Modify the Terraform script to also deploy the Azure Container Registry.
+- Perform other data transformation operations over CSV files.
 
 ## **Resources**  
 
 - 📌 [Azure Portal](https://portal.azure.com)  
 - 📖 [Azure Container Apps Docuentation](https://learn.microsoft.com/en-us/azure/container-apps)  
-- 🛠 [Terraform azurerm Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+- 📖 [FastAPI Documentation](https://fastapi.tiangolo.com/)  

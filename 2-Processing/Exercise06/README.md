@@ -1,23 +1,45 @@
-# Azure Processing - Exercise 6: Azure Container App for data transformation
+# Azure Processing - Exercise 6: Deploy an Azure Container App Job
 
-## **Objective**  
+## **Objective**
 
-In this exercise, we will modify our **Azure Container App** that exposes an API for **data transformation** using FastAPI. The app will accept a CSV file upload, filter specific data, and return the result in JSON format.
+In this exercise, you will deploy an **Azure Container App Job**, which is designed for **event-driven or batch processing workloads**.
 
-## **Steps**  
+You will first create the job manually using the Azure Portal, usin a simple data processing container image. Then, you will **design your own container image for a data modification use case**, and finally **automate the deployment using Terraform** and trigger the job manually. The fist part of the exercise will be led by the instructor.
 
-1. **Modify the FastAPI application** endpoint to accept a CSV file upload via an endpoint. The endpoint has to parse the file and apply a simple filter. You can use the [netflix.csv](./data/netflix.csv) file and filter by movies and series with rating == "PG-13", for example. Return filtered results as JSON in the response.
-2. **Containerize the updated application** with a new name using Docker and push it to ACR.   
-3. **Deploy a new container app via Terraform** to **Azure Container Apps**.  
-4. **Test the application** by sending data to process.  
+## **Steps**
 
-## **Extra**
+1. **Create an Azure Container App Job using the Azure Portal** with **manual trigger** for a [simple data processing job](./data_processing_job/).
+2. **Run the job** manually and **observe execution** logs.
+3. **Delete the job** to start clean for the next part.
+4. **Design and build your own container image** for a data-processing use case:
+   * The container should:
+     * Read input data (file, API, or mock data).
+     * Perform a **modification/transformation**.
+     * Output results (console log or file).
+   * Push the image to **Azure Container Registry (ACR)**.
+5. **Deploy the Container App Job using Terraform**:
+   * Use the image you created.
+   * Configure:
+     * **Trigger type**: Manual
+     * **Execution timeout and retry policy**
+     * **Environment variables (if needed)**
+6. **Manually trigger the job** using Azure CLI or Portal.
+7. **Validate execution** by reviewing logs and outputs.
 
-- Modify the Terraform script to also deploy the Azure Container Registry.
-- Perform other data transformation operations over CSV files.
+## **Ideas for the Data Processing Container**
 
+You can implement a Python script that:
+  * Reads a CSV and modifies values
+  * Calls an API and transforms responses
+  * Simulates database updates
+
+Example ideas:
+* Add a field to all JSON records
+* Normalize text data
+* Aggregate metrics
+  
 ## **Resources**  
 
 - 📌 [Azure Portal](https://portal.azure.com)  
-- 📖 [Azure Container Apps Docuentation](https://learn.microsoft.com/en-us/azure/container-apps)  
-- 📖 [FastAPI Documentation](https://fastapi.tiangolo.com/)  
+- 📖 [Azure Container Apps Jobs Documentation](https://learn.microsoft.com/en-us/azure/container-apps/jobs?tabs=azure-cli)  
+- 🛠 [Terraform azurerm Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
