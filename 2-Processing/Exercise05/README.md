@@ -11,8 +11,6 @@ In this exercise, we will modify our **Azure Container App** that exposes an API
 3. **Deploy a new container app via Terraform** to **Azure Container Apps**.  
 4. **Test the application** by sending data to process.  
 
-⚠ Do not delete the Azure Container Registry when you are done, it will be used in the next exercise.
-
 ## **Extra**
 
 - Modify the Terraform script to also deploy the Azure Container Registry.
