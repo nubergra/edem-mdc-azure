@@ -37,6 +37,14 @@ Example ideas for data transformation:
 * Normalize text data
 * Aggregate metrics
   
+## **Tips**
+
+To fix an OS error when creating the Container App Job, you can try building the image with:
+
+```
+docker buildx build --platform linux/amd64 --provenance=false -t <image_name> .
+```
+
 ## **Resources**  
 
 - 📌 [Azure Portal](https://portal.azure.com)  
