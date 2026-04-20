@@ -9,7 +9,6 @@ In this exercise, we will enhance the previous pipeline to include **data transf
 1. **Create a new pipeline** to transform data before loading it to the destination.
 2. **Use Data Flow activities** for transformations. You can add any transformations you think of.
 3. **Run and monitor the pipeline**.  
-4. Once you are done with the exercise, **delete** all of the resources.
 
 ## **Resources**  
 
