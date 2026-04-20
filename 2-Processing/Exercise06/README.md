@@ -13,9 +13,8 @@ You will first create the job manually using the Azure Portal, usin a simple dat
 3. **Delete the job** to start clean for the next part.
 4. **Design and build your own container image** for a data-processing use case:
    * The container should:
-     * Read input data from a file in ADLS or Blob Storage.
-     * Perform a **modification/transformation**.
-     * Output results to another file.
+     * Read input data from CSV files for the same table in a folder in ADLS.
+     * If the data is new or has been modified for the same record (same ID), **load it into another CSV file in a new folder**.
    * Push the image to **Azure Container Registry (ACR)**.
 5. **Deploy the Container App Job** and other needed services using **Terraform**:
    * Use the image you created.
@@ -25,17 +24,6 @@ You will first create the job manually using the Azure Portal, usin a simple dat
      * **Environment variables (if needed)**
 6. **Manually trigger the job** using Azure CLI or Portal.
 7. **Validate execution** by reviewing outputs.
-
-## **Extra ideas for the Data Processing Container App Job**
-
-You can also implement a Python script for a job that:
-  * Calls an API and transforms responses
-  * Simulates database updates
-
-Example ideas for data transformation:
-* Add a field to all JSON records
-* Normalize text data
-* Aggregate metrics
   
 ## **Tips**
 
