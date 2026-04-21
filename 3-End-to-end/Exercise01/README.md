@@ -1,8 +1,8 @@
-# Azure End-to-end - Exercise 1: Azure Container Apps & Azure Event Hub & Azure Functions & Azure CosmosDB
+# Azure End-to-end - Exercise 1: Azure Container Apps & Azure Event Hub &  Azure CosmosDB
 
 ## **Objective**  
 
-In this exercise, we will set up a **real-time event processing pipeline** using **Azure Container Apps**, **Azure Event Hub**, **Azure Functions** and **Azure CosmosDB (MongoDB API)**.  
+In this exercise, we will set up a **real-time event processing pipeline** using **Azure Container Apps**, **Azure Event Hub** and **Azure CosmosDB (MongoDB API)**.  
 
 ![End-to-end diagram](./images/e2e_exercise1.png)
 
@@ -28,19 +28,11 @@ Each message represents a **real-time transaction**:
 
 0. You should use **Terraform to automate the deployment of the Azure resources**.
 1. Using a **Python script**, **publish JSON messages** with simulated sales transaction data to **Azure Event Hub**. The Python script should be containerized and **deployed in Azure Container Apps**.
-2. **Create an Azure Function** that **is triggered** by **Event Hub**.
-3. **Process and transform the data** in **Azure Functions**, **transforming the data** into a structured format.  
-4. **Store the transformed data** into **Azure CosmosDB (MongoDB API)**. 
+2. With another **Python script**, also deployed in **Azure Container Apps**, process and transforms those messages.
+3. **Store the transformed data** into **Azure CosmosDB (MongoDB API)**. 
 
-### **Azure Functions tips**
-
-- If your deployment type for the Azure Function App is **Consumption**, deployment from VSCode won't work. Try using the [**zip push deployment**](https://learn.microsoft.com/en-us/azure/azure-functions/deployment-zip-push) instead, by building a zip with the Azure Funcion Python file, the host.json file and the requirements.txt file and deploying from the Azure CLI with:
-
-```
-az functionapp deployment source config-zip -g <resource_group> -n <app_name> --src <zip_file_path>
-```
-
-- You could also **substitute the Azure Function to process data with another container in Azure Container Apps**. 
+## **Extra**
+4. Deploy a **new Azure Container Apps with a Streamlit app** that reads the data from CosmosDB and shows a **dashboard with insights on the data**, like, for example, the total sales per payment method, total amount per product, most bought product... and anything else you can think of. Ideally, you should deploy **another container app with an API that will make the calls to CosmosDB** to expose the data instead of directly querying data from the Streamlit UI.
 
 
 ## **Extra**

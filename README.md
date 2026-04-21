@@ -67,5 +67,5 @@ Below is the list of exercises included in this repository:
 - [Azure Processing - Extra Exercise 2: Dynamic pipelines in Data Factory](./2-Processing/Extra02/)
 
 ### End-to-end
-- [Azure End-to-end - Exercise 1: Azure Container Apps & Azure Event Hub & Azure Functions & Azure CosmosDB](./3-End-to-end/Exercise01)
+- [Azure End-to-end - Exercise 1: Azure Container Apps & Azure Event Hub &  Azure CosmosDB](./3-End-to-end/Exercise01)
 - [Azure End-to-end - Extra Exercise 1: Defining an architecture and calculating its costs](./3-End-to-end/Extra01/)
