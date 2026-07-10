@@ -34,10 +34,6 @@ Each message represents a **real-time transaction**:
 ## **Extra**
 4. Deploy a **new Azure Container Apps with a Streamlit app** that reads the data from CosmosDB and shows a **dashboard with insights on the data**, like, for example, the total sales per payment method, total amount per product, most bought product... and anything else you can think of. Ideally, you should deploy **another container app with an API that will make the calls to CosmosDB** to expose the data instead of directly querying data from the Streamlit UI.
 
-
-## **Extra**
-5. Deploy a **new Azure Container Apps with a Streamlit app** that reads the data from CosmosDB and shows a **dashboard with insights on the data**, like, for example, the total sales per payment method, total amount per product, most bought product... and anything else you can think of. Ideally, you should deploy **another container app with an API that will make the calls to CosmosDB** to expose the data instead of directly querying data from the Streamlit UI.
-
 ## **Resources**  
 
 - 📌 [Azure Portal](https://portal.azure.com)  
